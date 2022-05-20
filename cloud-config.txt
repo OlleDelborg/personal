@@ -14,7 +14,7 @@ runcmd:
   - 'sudo apt-get install -y docker-ce docker-ce-cli containerd.io'
   - 'sudo apt install -y docker-compose'
 
-  - 'sudo git clone https://olledelborg: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@github.com/nmartinbekier/de2_g12_project.git'
+  - 'sudo git clone https://olledelborg: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/olledelborg/personal.git'
   - 'sudo docker-compose -f pulsar-config.yaml up -d'
 
 byobu_default: system
