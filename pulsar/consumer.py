@@ -1,12 +1,9 @@
 import pulsar
 from pulsar import ConsumerType
-#import pymongo
 
 client = pulsar.Client('pulsar://pulsar:6650')
 consumer = client.subscribe('language_count', subscription_name='q1-sub', consumer_type=ConsumerType.Shared)
 
-#mongoClient = pymongo.MongoClient("mongodb://mongo:27017/")
-#db = mongoClient["Github_statistics"]
 col = db["language_count"]
 
 while True:
